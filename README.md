@@ -74,31 +74,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `flux-operator` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install flux-operator
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install flux-operator
 ```
 
-It is possible to list all of the versions of `flux-operator` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add flux-operator
+# for installing globally
+pixi global install flux-operator
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `flux-operator` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search flux-operator --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search flux-operator --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search flux-operator --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -110,6 +152,8 @@ mamba repoquery whoneeds flux-operator --channel conda-forge
 # List dependencies of `flux-operator`:
 mamba repoquery depends flux-operator --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge

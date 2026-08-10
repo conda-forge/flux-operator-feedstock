@@ -1,5 +1,5 @@
 context:
-  version: "0.57.0"
+  version: "0.58.0"
 
 package:
   name: flux-operator
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/controlplaneio-fluxcd/flux-operator/archive/refs/tags/v${{ version }}.tar.gz
-    sha256: b9ea2c975b78413feaf3cea9f4814ba32b34fb953ab12ff07e0608fa23f243ea
+    sha256: 554572233f70c83f893cdfddb90a8aa29c2b4c15540ae3a20d8f5c49a27f3d50
     target_directory: src
   - url: https://raw.githubusercontent.com/in-toto/in-toto-golang/refs/heads/master/LICENSE
     sha256: b5c26c8a2ad6dd7cac6646e470a32ee42d23c36124caac4e66c989b6545b2a44
